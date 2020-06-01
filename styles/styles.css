@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 80px;
+}
+
+#navPanel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    border-bottom: 2px whitesmoke;
+    background-color: #ffffff;
+}
+
+#navPanel a:hover {
+    border-bottom: 2px solid gray;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #ffffff;
+    }
+
+    #studentInfo {
+        order: 2;
+    }
+
+    #studentPicture {
+        order: 1;
+    }
+
+    #collegeResult a {
+        border-left: 0px;
+    }
+}
+
+.jumbotron {
+    /*margin-left: 10%;
+    width: 80%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9099A2;
+    color: white;
+    font-size: 17px;
+}
+
+#jHeading {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+.table-borderless>tbody>tr>td,
+.table-borderless>tbody>tr>th,
+.table-borderless>tfoot>tr>td,
+.table-borderless>tfoot>tr>th,
+.table-borderless>thead>tr>td,
+.table-borderless>thead>tr>th {
+    border: none;
+}
+
+
+.table-borderless>thead>tr>th {
+    border-bottom: 1px solid gray;
+}
+
+
+
+.table-borderless>thead>tr>th:first-child,
+.table-borderless>tbody>tr>td:first-child {
+    border-right: 1px solid gray;
+}
+
+
+.table-borderless>thead>tr>th:last-child,
+.table-borderless>tbody>tr>td:last-child {
+    border-left: 1px solid gray;
+}
+
+
+#collegeResult {
+    max-width: 100%;
+    background-color: #FFFBFA;
+}
+
+#collegeResult a {
+    border-left-style: solid;
+    padding-right: 50px;
+    border-color: rgb(121, 119, 119);
+    color: gray;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+#collegeResult a#a1 {
+    border-left-style: none;
+}
+
+.footer {
+
+    width: 100%;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}

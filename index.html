@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Custom css-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top pt-3" id="navPanel">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Logo</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mr-4"><a class="nav-link" href="index.html "> Home
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">
+                            Edit Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Jumbotron start-->
+    <header class="jumbotron">
+        <div class="container text-center text-sm-left">
+            <div class="row row-header">
+                <div class="col-12 mb-4">
+                    <div class="row justify-content-center">
+                        <h2 class="" id="jHeading">Student Profile</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 align-self-center offset-sm-1" id="studentInfo">
+                    <div class="row row-content">
+                        <div class="col-12 col-sm-6">
+                            <p>Name: Demo Student Batman </p>
+                        </div>
+                        <div class="col-12 col-sm">
+                            <p>Gender: Male</p>
+                        </div>
+                    </div>
+                    <div class="row row-content">
+                        <div class="col-12 col-sm-6">
+                            <p>ID: 123654789 </p>
+                        </div>
+                        <div class="col-12 col-sm">
+                            <p>Date of Birth: 01/01/1000</p>
+                        </div>
+                    </div>
+                    <div class="row row-content">
+                        <div class="col-12 col-sm-6">
+                            <p>Group: Science </p>
+                        </div>
+                        <div class="col-12 col-sm">
+                            <p>Optional Subject: Biology</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm align-self-center mb-4" id="studentPicture">
+                    <img src="images/cnh.png" alt="" class="img-fluid img-thumbnail" width="150px">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Jumbotron end-->
+
+    <!--Board result start-->
+    <div class="container mt-5">
+        <div class="row" id="boardResult">
+            <div class="col-12 col-sm-10 offset-sm-1">
+                <h4 class="mb-5">Board Results: </h4>
+                <table class="table table-borderless text-center">
+                    <thead class="">
+                        <tr>
+                            <th>Reg No.</th>
+                            <th>SSC</th>
+                            <th>JSC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">0000111112222</td>
+                            <td>Roll: 111222</td>
+                            <td>GPA: 0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Board: Chittagong</td>
+                        </tr>
+                        <tr>
+                            <td>GPA: 0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Board result end-->
+
+    <!--College result selection start-->
+    <div class="row mt-5 pb-5" id="collegeResult">
+        <div class="container">
+            <div class="col-12 mt-5">
+                <div class="row justify-content-center">
+                    <h3 class="">View Your College Result</h3>
+                </div>
+                <div class="row mt-5">
+                    <div class=" container text-center">
+                        <p>
+                            <a href="#clgResultTable" class="clgRsltLink" id="a1" onclick="replaceResult()">Mid Term</a>
+                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">First Year</a>
+                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">Pre Test</a>
+                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">Test</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--College result selection end-->
+
+    <!--College result hidden details start-->
+    <div class=" row mt-5" id="clgResultTable">
+        <div class="col-12 col-sm-10 offset-sm-1">
+            <div class="row justify-content-center ">
+                <h3>Exam Name: </h3>
+            </div>
+            <div class="row mt-4">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="">
+                        <tr>
+                            <th>Sub Code</th>
+                            <th>Sub Name</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>asd</td>
+                            <td>00</td>
+                            <td>Z</td>
+                            <td rowspan="10">Z</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>asd</td>
+                            <td>00</td>
+                            <td>Z</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>asd</td>
+                            <td>00</td>
+                            <td>Z</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row row-content justify-content-end">
+                <a type="button" class="btn btn-outline-secondary" id="closeClgRslt" onclick="closeResult()">Close</a>
+            </div>
+        </div>
+    </div>
+    <!--College result hidden details end-->
+
+
+    <div class="footer">
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
