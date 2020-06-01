@@ -5,11 +5,13 @@ $(document).ready(function () {
 
 var hiddenDiv;
 
-function replaceResult() {
-    hiddenDiv = document.getElementById('boardResult').innerHTML;
-    document.getElementById('boardResult').innerHTML = document.getElementById('clgResultTable').innerHTML;
+function replaceResult(hide, show) {
+    document.getElementById(hide).style.display = "none";
+    document.getElementById(show).style.display = "block";
+
 }
 
 function closeResult() {
-    document.getElementById('boardResult').innerHTML = hiddenDiv;
+    document.getElementById('boardResult').style.display = "block";
+    document.getElementById('clgResultTable').style.display = "none";
 }

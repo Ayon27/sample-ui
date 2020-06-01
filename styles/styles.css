@@ -33,6 +33,13 @@ body {
 
     #collegeResult a {
         border-left: 0px;
+        border-style: none;
+        display: block;
+    }
+
+    #clgResultTable {
+        max-width: 85%;
+        margin-left: 0;
     }
 }
 
@@ -92,6 +99,10 @@ body {
     padding-left: 50px;
 }
 
+#collegeResult a:hover {
+    color: black;
+}
+
 #collegeResult a#a1 {
     border-left-style: none;
 }
@@ -102,4 +113,8 @@ body {
     background-color: black;
     width: 100%;
     height: 200px;
+}
+
+#clgResultTable {
+    max-width: 100%;
 }

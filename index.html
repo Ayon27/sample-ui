@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Custom css-->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -108,30 +108,8 @@
     </div>
     <!--Board result end-->
 
-    <!--College result selection start-->
-    <div class="row mt-5 pb-5" id="collegeResult">
-        <div class="container">
-            <div class="col-12 mt-5">
-                <div class="row justify-content-center">
-                    <h3 class="">View Your College Result</h3>
-                </div>
-                <div class="row mt-5">
-                    <div class=" container text-center">
-                        <p>
-                            <a href="#clgResultTable" class="clgRsltLink" id="a1" onclick="replaceResult()">Mid Term</a>
-                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">First Year</a>
-                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">Pre Test</a>
-                            <a href="#clgResultTable" class="clgRsltLink" onclick="replaceResult()">Test</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--College result selection end-->
-
     <!--College result hidden details start-->
-    <div class=" row mt-5" id="clgResultTable">
+    <div class="row mt-5" id="clgResultTable">
         <div class="col-12 col-sm-10 offset-sm-1">
             <div class="row justify-content-center ">
                 <h3>Exam Name: </h3>
@@ -171,16 +149,43 @@
                 </table>
             </div>
             <div class="row row-content justify-content-end">
-                <a type="button" class="btn btn-outline-secondary" id="closeClgRslt" onclick="closeResult()">Close</a>
+                <a type="button" class="btn btn-outline-secondary" id="closeClgRslt"
+                    onclick="replaceResult('clgResultTable', 'boardResult')">Close</a>
             </div>
         </div>
     </div>
     <!--College result hidden details end-->
 
+    <!--College result selection start-->
+    <div class="row mt-5 pb-5" id="collegeResult">
+        <div class="container">
+            <div class="col-12 mt-5">
+                <div class="row justify-content-center">
+                    <h3 class="">View Your College Result</h3>
+                </div>
+                <div class="row mt-5">
+                    <div class=" container text-center">
+                        <p class="">
+                            <a href="#clgResultTable" class="clgRsltLink d-sm-block d-lg-inline" id="a1"
+                                onclick="replaceResult('boardResult', 'clgResultTable')">Mid Term</a>
+                            <a href="#clgResultTable" class="clgRsltLink d-sm-block d-lg-inline"
+                                onclick="replaceResult('boardResult', 'clgResultTable')">First
+                                Year</a>
+                            <a href="#clgResultTable" class="clgRsltLink d-sm-block d-lg-inline"
+                                onclick="replaceResult('boardResult', 'clgResultTable')">Pre Test</a>
+                            <a href="#clgResultTable" class="clgRsltLink d-sm-block d-lg-inline"
+                                onclick="replaceResult('boardResult', 'clgResultTable')">Test</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--College result selection end-->
 
     <div class="footer">
-
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
