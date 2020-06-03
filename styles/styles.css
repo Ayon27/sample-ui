@@ -18,6 +18,17 @@ body {
     border-bottom: 2px solid gray;
 }
 
+#navPanel1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    border-bottom: 2px whitesmoke;
+    background-color: #ffffff;
+}
+
+#navPanel1 a:hover {
+    border-bottom: 2px solid gray;
+}
+
 @media (max-width: 768px) {
     .navbar {
         background-color: #ffffff;
@@ -39,7 +50,7 @@ body {
 
     #clgResultTable {
         max-width: 85%;
-        margin-left: 0;
+        margin-left: 0px;
     }
 }
 
@@ -117,4 +128,23 @@ body {
 
 #clgResultTable {
     max-width: 100%;
+}
+
+.cluster {
+    border-bottom: 2px solid gray;
+}
+
+#closeBtn {
+    margin-right: 1%;
+}
+
+.form-label {
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 450;
+    color: gray;
+}
+
+.error {
+    color: red;
 }
